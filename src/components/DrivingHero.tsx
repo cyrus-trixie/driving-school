@@ -8,7 +8,7 @@ const DrivingHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1500&q=80')"
+          backgroundImage: "url('https://biznakenya.com/wp-content/uploads/2024/10/AAK-New-vehicles-820x480-1.jpg')"
         }}
       >
         {/* Dark overlay for readability */}
