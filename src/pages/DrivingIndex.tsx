@@ -16,10 +16,10 @@ const DrivingIndex = () => {
       <DrivingHero />
       <DrivingCourses />
       <DrivingPricing />
+      <DrivingGallery />
       <DrivingSchedule />
       <DrivingAbout />
       <DrivingApplication />
-      <DrivingGallery />
       <DrivingTestimonials />
       <DrivingContact />
     </div>

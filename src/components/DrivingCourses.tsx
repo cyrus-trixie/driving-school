@@ -8,7 +8,7 @@ const DrivingCourses = () => {
     {
       category: "Category A",
       title: "Motorcycle License",
-      icon: Bike,
+      image: "https://image.made-in-china.com/2f0j00TMdhCDobCtRs/Haojue-Motorcycle-125-Haojue-Motorbike-YAMAHA-Motorcycle-Motorcycle-Parts.webp",
       description: "Learn to ride motorcycles safely and confidently. Covers basic to advanced riding techniques.",
       duration: "2-3 weeks",
       lessons: "8-12 lessons",
@@ -17,7 +17,7 @@ const DrivingCourses = () => {
     {
       category: "Category B",
       title: "Car License",
-      icon: Car,
+      image: "https://perfectdriving.co.ke/wp-content/uploads/2020/12/Home_3836.jpg",
       description: "Most popular course. Learn to drive cars with manual or automatic transmission.",
       duration: "4-6 weeks",
       lessons: "20-30 lessons",
@@ -26,7 +26,7 @@ const DrivingCourses = () => {
     {
       category: "Category C, D, E",
       title: "Commercial Vehicles",
-      icon: Truck,
+      image: "https://acinidriving.com/wp-content/uploads/2020/11/truck.jpg",
       description: "Heavy vehicles, matatus, trucks, and buses. For professional drivers.",
       duration: "6-8 weeks",
       lessons: "30-40 lessons",
@@ -35,7 +35,7 @@ const DrivingCourses = () => {
     {
       category: "Refresher",
       title: "Refresher Course",
-      icon: RefreshCw,
+      image: "https://acinidriving.com/wp-content/uploads/2020/08/Ac-9551-400x250.jpg",
       description: "Perfect for licensed drivers who want to improve their skills or haven't driven in a while.",
       duration: "1-2 weeks",
       lessons: "5-10 lessons",
@@ -44,7 +44,7 @@ const DrivingCourses = () => {
     {
       category: "Defensive",
       title: "Defensive Driving",
-      icon: Shield,
+      image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80",
       description: "Advanced safety techniques, hazard awareness, and accident prevention strategies.",
       duration: "1 week",
       lessons: "5-8 lessons",
@@ -71,7 +71,6 @@ const DrivingCourses = () => {
         {/* Courses Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => {
-            const IconComponent = course.icon;
             return (
               <Card key={index} className="relative group hover:shadow-lg transition-all duration-300 border-2 border-black bg-white">
                 {course.popular && (
@@ -80,8 +79,8 @@ const DrivingCourses = () => {
                   </div>
                 )}
                 <CardHeader className="text-center pb-4">
-                  <div className="mx-auto mb-4 w-16 h-16 bg-red-100 rounded-full flex items-center justify-center group-hover:bg-red-200 transition-colors">
-                    <IconComponent className="h-8 w-8 text-red-600" />
+                  <div className="mx-auto mb-4 w-full h-40 rounded-lg overflow-hidden">
+                    <img src={course.image} alt={course.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="space-y-2">
                     <Badge variant="outline" className="text-xs border-red-600 text-red-600">
