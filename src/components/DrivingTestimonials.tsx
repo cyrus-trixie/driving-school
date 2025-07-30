@@ -68,13 +68,13 @@ const DrivingTestimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary/20">
+    <section className="py-20 bg-muted/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Star className="h-6 w-6 text-primary" />
-            <span className="text-primary font-medium">Student Success Stories</span>
+            <Star className="h-6 w-6 text-yellow-500" />
+            <span className="text-yellow-600 font-medium">Student Success Stories</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             What Our Students Say
@@ -87,7 +87,7 @@ const DrivingTestimonials = () => {
         {/* Success Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
-            <Card key={index} className="text-center">
+            <Card key={index} className="text-center bg-white shadow-sm">
               <CardContent className="p-6">
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{stat.number}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -99,11 +99,11 @@ const DrivingTestimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 relative">
+            <Card key={index} className="group hover:shadow-md transition-all duration-300 relative bg-white">
               <CardContent className="p-6">
                 {/* Quote Icon */}
-                <div className="absolute top-4 right-4 opacity-20">
-                  <Quote className="h-8 w-8 text-primary" />
+                <div className="absolute top-4 right-4 opacity-10">
+                  <Quote className="h-8 w-8 text-gray-400" />
                 </div>
 
                 {/* Rating */}
@@ -111,11 +111,11 @@ const DrivingTestimonials = () => {
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
-                  <span className="text-sm text-muted-foreground ml-2">({testimonial.rating}/5)</span>
+                  <span className="text-sm text-gray-500 ml-2">({testimonial.rating}/5)</span>
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6 italic">
+                <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">
                   "{testimonial.quote}"
                 </p>
 
@@ -127,17 +127,17 @@ const DrivingTestimonials = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.name}</p>
-                      <p className="text-xs text-muted-foreground">Age {testimonial.age} • {testimonial.date}</p>
+                      <p className="text-xs text-gray-500">Age {testimonial.age} • {testimonial.date}</p>
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border-gray-300 text-gray-700">
                       {testimonial.course}
                     </Badge>
                     <div className="flex items-center space-x-2">
-                      <Award className="h-4 w-4 text-success" />
-                      <span className="text-xs text-success font-medium">{testimonial.achievement}</span>
+                      <Award className="h-4 w-4 text-green-600" />
+                      <span className="text-xs text-green-700 font-medium">{testimonial.achievement}</span>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ const DrivingTestimonials = () => {
 
         {/* Overall Rating */}
         <div className="mt-16 text-center">
-          <Card className="max-w-2xl mx-auto bg-primary/5 border-primary/20">
+          <Card className="max-w-2xl mx-auto bg-primary/5 border border-primary/20">
             <CardContent className="p-8">
               <div className="flex items-center justify-center space-x-4 mb-4">
                 <div className="flex items-center space-x-1">
@@ -158,7 +158,7 @@ const DrivingTestimonials = () => {
                 </div>
                 <span className="text-2xl font-bold text-foreground">4.9/5</span>
               </div>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-gray-600 mb-6">
                 Based on 300+ verified student reviews across all courses
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
