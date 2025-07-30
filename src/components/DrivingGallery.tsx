@@ -48,21 +48,21 @@ const DrivingGallery = () => {
       course: "Category B",
       quote: "Best driving school in Nairobi! The instructors are patient and professional.",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+      avatar: "https://plus.unsplash.com/premium_photo-1715876267697-800a09450c4b?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://plus.unsplash.com/premium_photo-1715876267697-800a09450c4b?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       name: "David Kiprotich",
       course: "Category C",
       quote: "Excellent training for commercial vehicles. Now I'm a confident truck driver.",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+      avatar: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBwZXJzb258ZW58MHx8MHx8fDA%3D"
     },
     {
       name: "Grace Akinyi",
       course: "Category A",
       quote: "Learned to ride a motorcycle safely. Great experience with DriveSafe Academy.",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+      avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
